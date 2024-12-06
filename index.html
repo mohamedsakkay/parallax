@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page with Parallax Effect</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        height: 100vh; /* Full viewport height */
+      }
+
+      .text-content {
+        width: 50%;
+        padding-right: 20px;
+      }
+
+      .parallax-container {
+        width: 50%;
+        height: 100%; /* Make sure it fills the container height */
+        overflow: hidden;
+        position: relative;
+      }
+
+      .parallax-image {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-content">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>
+          Discover the finest dishes crafted with the freshest ingredients.
+          Experience culinary delights that will tantalize your taste buds and
+          leave you craving for more. Join us for an unforgettable dining
+          experience.
+        </p>
+      </div>
+      <div class="parallax-container">
+        <img
+          src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+          class="parallax-image"
+          alt="Parallax Image"
+        />
+      </div>
+    </div>
+
+    <script src="simpleParallax.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var image = document.querySelector(".parallax-image");
+        new simpleParallax(image, {
+          scale: 1.2,
+          delay: 1,
+        });
+      });
+    </script>
+  </body>
+</html>

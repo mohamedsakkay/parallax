@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.our-features .right-side {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-features .right-side a {
+  text-decoration: none;
+  min-width: 130px;
+  width: 130px;
+  text-align: center;
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.our-features .right-side .content-right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.our-features .right-side h4 {
+  font-size: 2rem;
+}
+
+.container {
+  padding: 2rem 10%;
+}
+
+.our-features {
+  display: flex;
+  background: #0000ff12;
+  align-items: center;
+  flex-direction: row;
+}
+
+.our-features p {
+  font-size: 1.2rem;
+}
+
+.our-features .left-side {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.our-features .left-side .img-left-side {
+  width: 93%;
+}
+
+.our-features .left-side .img-left-side img {
+  width: 100%;
+}
+
+.our-features .left-side .content-left-side {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.our-features .ico-span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+
+.our-features .ico-span img {
+  width: 20px;
+  height: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 35px;
+  background: #ededff;
+}
+
+.accordion {
+  width: 80%;
+  margin: 20px auto;
+  /* background-color: #000; */
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.accordion h2 {
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #fff;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #ededff;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #dcdcf7;
+}
+
+.accordion-icon {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f7f7ff;
+  padding: 0 15px;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
